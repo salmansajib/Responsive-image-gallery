@@ -1,0 +1,64 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: rgb(251, 255, 255);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 3px solid rgb(193, 193, 193);
+  border-radius: 0.5rem;
+  /* outline: 2px solid rgb(205, 205, 205); */
+}
+
+.title {
+  text-align: center;
+  padding-block: 2rem;
+  background: rgb(66, 190, 105);
+  color: rgb(9, 9, 43);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+main {
+  width: 97%;
+  max-width: 1400px;
+  margin-inline: auto;
+}
+
+.img-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-block: 1.5rem;
+}
+
+@media only screen and (max-width: 730px) {
+  .img-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .img-gallery {
+    grid-template-columns: 1fr;
+  }
+}
