@@ -16,7 +16,7 @@
 
 body {
   min-height: 100vh;
-  background: rgb(251, 255, 255);
+  background: rgb(47, 36, 44);
 }
 
 img {
@@ -24,23 +24,27 @@ img {
   max-width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  border: 3px solid rgb(193, 193, 193);
-  border-radius: 0.5rem;
-  /* outline: 2px solid rgb(205, 205, 205); */
+  /* border: 3px solid rgb(92, 122, 255); */
+  border-radius: 0.7rem;
 }
 
 .title {
-  text-align: center;
-  padding-block: 2rem;
-  background: rgb(66, 190, 105);
-  color: rgb(9, 9, 43);
+  width: max-content;
+  margin-top: 1.5rem;
+  margin-inline: auto;
+  padding: 2rem;
+  /* background: rgb(66, 190, 105); */
+  border: 3px solid rgb(92, 122, 255);
+  border-radius: 500px;
+  color: whitesmoke;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
 
 main {
-  width: 97%;
-  max-width: 1400px;
+  /* width: 97%;
+  max-width: 1400px; */
+  width: min(100% - 2rem, 1200px);
   margin-inline: auto;
 }
 
